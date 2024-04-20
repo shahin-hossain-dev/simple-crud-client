@@ -26,7 +26,7 @@ const Users = () => {
       <h2>Users Number : {users.length}</h2>
       {users.map((user) => (
         <p key={user._id}>
-          name: {user.name}, email: {user.email}{" "}
+          Name: {user.name}, Email: {user.email}{" "}
           <Link to={`/update/${user._id}`}>
             <button>Update</button>
           </Link>
