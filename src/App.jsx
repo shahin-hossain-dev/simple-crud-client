@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./App.css";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
   return (
     <>
       <h1>Simple CRUD</h1>
+      <Link to="/users">User</Link>
       <form onSubmit={handleAddUser}>
         <input type="text" name="name" placeholder="name" />
         <br />
